@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/sedaasinek/
+          uri: https://github.com/sedaasinek/config-server
           clone-on-start: true
           username: sedaasinek
           password:
