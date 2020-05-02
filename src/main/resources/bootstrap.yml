@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sedaasinek/
+          clone-on-start: true
+          username: sedaasinek
+          password:
+server:
+  port: 8980
+  servlet:
+    context-path: /onee-config-server
