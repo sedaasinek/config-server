@@ -1,15 +1,17 @@
 spring:
   application:
-    name: config-server
+    name: configserver
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/sedaasinek/config-server
+          uri: https://github.com/onee-hospitality/onee-config-server
           clone-on-start: true
-          username: sedaasinek
-          password:
+          username: config@onee.com
+          password: 2e753691378bd6701536538c97ab3a523b2a87fe
+  security:
+    user:
+      name: ${configserver.secure.user:admin}
+      password: ${configserver.secure.pass:admin}
 server:
   port: 8980
-  servlet:
-    context-path: /onee-config-server
